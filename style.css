@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2? familia= Nunito+Sans:peso@200 &familia= Roboto:ital,peso@0,400;1,900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+
+/*----------------------------------------------INDEX (HEADER)------------------------------------------------------*/
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box; 
+}
+
+
+header {
+
+    background-color: white;
+    position: sticky;
+    top: 0px;
+
+}
+
+
+.header_father{
+
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+    height: 12vh;
+  
+       
+}
+
+.logo {
+     width: 20%;
+     height: 80px;
+     object-fit: cover;
+}
+
+
+ul{
+    list-style: none; 
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.hola_li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 70%;
+    height:50px;
+    font-family:'Alegreya Sans SC', sans-serif;
+    font-size: 13px;
+    font-weight: bold; 
+    color: black;
+   
+    
+}
+
+li:hover {
+    background-color:rgba(172, 216, 216)
+    }
+
+#contacto {
+    color: rgb(0, 0, 0);
+}
+
+.contacto-1 {
+    background-color: rgba(172, 216, 216);
+    padding: 7px;
+    
+}
+
+/*---------------------------------------------- MAIN (INDEX)------------------------------------------------------*/
+
+.main_index{
+    background-image: url( images/paginabienvenidos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 480px;
+    padding-top: 20px;
+    
+   
+}
+
+.main_indexfather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid 1px rgb(0, 255, 13);
+    padding-top: 5px;
+     
+}
+
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: solid 1px red;
+    padding-top: 10px;
+    
+    
+
+    
+}
+.tituloindex_son1{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    width: 50vw;
+    height: 100px;
+    border: solid 1px;
+    
+}
+
+#tituloson2_estilotexto {
+
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 30px;
+    color: white;
+    border: solid 1px yellow;
+
+    
+}
+
+.dejametumensaje_index{
+    width: 190px;
+    height: 25px;
+    font-size: 15px;
+    background-color: rgba (175, 175, 175, 0);
+    border: solid 0.9px;
+    color: white;
+    margin: 50px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.dejametumensaje:hover{
+
+    background-color: rgb(175, 167, 167);
+}
+
+@media screen and (max-width: 1146px) {
+  .tituloindex_son1{
+    width: 90vw;
+    height: 100px;
+  } 
+    
+}
+
+@media screen and (max-width: 622px){
+    .tituloindex_son1{
+        font-size: 12px ;
+    }
+
+    #tituloson2_estilotexto{
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width:569px) {
+    .redes_son{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header_father{
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hola_li{
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+}
+
+@media screen and ( max-width:382px) {
+    .tituloindex_son1{
+        width: 90vw;
+        height: 150px;
+      } 
+        
+}
+
+
+
+/*-----------------------------------MAIN (SERVICIOS)-----------------------------------------------------*/
+
+
+
+.main_servicios{
+    background-color: rgb(208, 253, 255);
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    align-content: center;
+   }
+
+   .cuatro{
+      
+       background-image: url(images/servicios-cuatro.jpg);
+       background-size: cover;
+       background-position:top top;
+       width: 100%;
+       height: 52%;
+     
+       
+       
+   }
+
+.container_card{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 258px;
+    
+    
+
+}
+
+
+.card{
+
+width:200px;
+height: 280px;
+background-color: white;
+text-align: center;
+padding: 15px;
+border-radius: 20px;
+border-right: outset rgb(173, 195, 196);
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+position: relative;
+top: -45px;
+}
+
+.card img{
+
+    width: 40%;
+    height: 25%;
+    border: solid 3px; color: blueviolet;
+   
+}
+
+@media screen and  (max-width: 802px) {
+    .container_card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main_servicios{
+        width: 100%;
+        height: 80%;
+       }
+    
+    .card {
+           top: 0px;
+           margin-top: 8px;
+           margin-bottom: 8px;
+           position: static;
+       }
+
+       .cuatro{
+      
+        background-image: none;
+        background-size: cover;
+        background-position:top top;
+        width: none;
+        height: none;
+      
+        
+        
+    }
+    
+}
+
+
+
+/*----------------------------------- MAIN SOBRE MI -----------------------------------------------------*/
+
+.main_sobremi{
+    background-color: rgb(255, 255, 255);
+    border: solid 1px yellow;
+    
+}
+
+.container_sobremi{
+
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    border: solid 1px;
+
+}
+
+
+.caja_quiensoy{
+    width: 100vw;
+    border:  solid 1px red;
+    
+}
+
+.quiensoy1{
+
+width:100%;
+background-color: rgba(172, 216, 216);
+text-align: center;
+padding: 25px;
+
+ 
+}
+
+h1{
+    padding: 10px;
+}
+p{
+    padding: 10px;
+}
+
+.cajafotode_mi{
+
+width: 100%;
+display: flex;
+flex-direction:column;
+justify-content: flex-start;
+align-items: center;
+border: solid 2px pink;
+
+
+
+}
+
+.cajafotode_mi img{
+    object-fit: cover;
+    border: solid 1px;
+    
+
+}
+
+/*-----------------------------------MAIN CONTACTOS--------------------------------------------------------*/
+
+.main_contacto{
+
+    background-image: url("images/img_contacto.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;  
+  
+}
+
+.contenedor_contacto{
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.titulo-contacto{
+    
+    width: 80%;
+    height: 10%;
+    font-size: 20px;
+}
+.subtitulo-contacto{
+
+    width: 70%;
+    height: 10%;
+    font-size: 10px;
+    margin-left: 10%;
+}
+
+.contactame{
+    width: 40%;
+    height: 10%;
+    font-size: 10px;
+    margin-left: 5%;
+    margin-top: 5%;
+ 
+}
+
+.formulariocontacto{
+    width: 90%;
+    height: 65%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+
+}
+
+@media screen and (max-width: 515px) {
+
+    #recuadroenviar {
+        width: 300px;
+        height: 20%;
+    }
+
+    .titulo-contacto{
+
+        font-size: 15px;
+        margin-left: 10%;
+        margin-top: 10px;
+    }
+    .subtitulo-contacto{
+    
+        width: 80%;
+        font-size: 8px;
+        width: 100%;
+        text-align: left;
+        margin-left: 6%;
+    }
+}
+
+@media screen and (max-width: 324px) {
+    #recuadroenviar {
+        width: 169px;
+        height: 20%;
+    }
+}
+
+/*-----------------------------------MAIN ClIENTES----------------------------------------------------------*/
+
+
+
+
+.cliente{
+   
+ grid-area: 1/ 1 / 1 / 4;
+ background-color: rgb(221, 221, 221);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ object-fit: cover;
+
+
+}
+
+.bayer{
+    background-color: aqua;
+    grid-area: 2 / 1 / 2 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+  
+
+}
+
+.telecom{
+background-color: black;
+grid-area: 2 / 2 / 2 / 2;
+display: flex;
+justify-content: center;
+align-items: center;
+object-fit: cover;
+
+
+}
+
+.confiarh{
+ background-color: brown;
+ grid-area: 2 / 3 / 2 / 3;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+object-fit: cover;
+
+}
+
+.starbucks{
+background-color: yellowgreen;
+grid-area: 3 / 1 / 3 / 1;
+display: flex;
+justify-content: center;
+align-items: center;
+object-fit: cover;
+
+
+}
+
+.adecco{
+background-color: blueviolet;
+grid-area: 3 / 2 / 3 / 2;
+display: flex;
+justify-content: center;
+align-items: center;
+object-fit: cover;
+
+
+}
+
+.pwc{
+background-color: violet;
+grid-area: 3 / 3 / 3 / 3;
+display: flex;
+justify-content: center;
+align-items: center;
+object-fit: cover;
+
+
+
+}
+
+.grid-container{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr;
+    grid-template-areas: 
+    
+     "cliente cliente cliente"
+     "bayer telecom confiarh"
+      "starbucks adecco pwc ";
+     
+    }
+    
+
+@media screen and (max-width: 971px) {
+ .grid-container{
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 80px 1fr 1fr 1fr;    
+     grid-template-areas:
+
+     "cliente cliente" 
+     "bayer telecom " 
+     " confiarh starbucks "
+     "adecco pwc" ;
+
+ }
+
+ .cliente{
+     
+    grid-area: 1/ 1 /1 / 3;
+
+ }
+
+ .bayer{
+
+  grid-area: 2 / 1/ 2/ 2 ;
+ }
+
+ .telecom{
+
+    grid-area: 2 / 2 / 2 /3;
+ } 
+
+ .confiarh{
+     grid-area: 3 / 1 / 3/ 2;
+ }
+
+
+ .starbucks{
+     grid-area: 3/ 2 / 3 / 3;
+ }
+
+ .adecco{
+     grid-area: 4 / 1 / 4 / 2;
+ }
+
+ .pwc{
+     grid-area: 4 / 2 / 4 / 3;
+ }
+
+ .grid-container img{
+    width: 100%;
+    height: 100%;
+ }
+
+
+}
+
+/*-----------------------------------aca comienza foter------------------------------------------------------*/
+
+
+
+
+.footer_father{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: lightgrey;  
+    width: 100%;
+    height: 100%;
+}
+
+.redes_son {
+    margin: 2px;
+    padding: 0px;
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
+
+.imagen_r{
+    width: 40px;
+    height: 100%;
+}
+
+.copyright {    
+    
+    color: rgb(12, 12, 12);
+    
+}
+
+#tamaniocopy{
+    font-size: 13px;
+   
+}
+/*-----------------------------------FOOTER-----------------------------------------------------*/
