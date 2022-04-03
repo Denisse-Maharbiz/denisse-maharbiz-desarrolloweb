@@ -10,84 +10,50 @@
     box-sizing: border-box; 
 }
 
+/*---------boostrap nav ------------------*/
 
-header {
-
-    background-color: white;
-    position: sticky;
-    top: 0px;
-
-}
-
-
-.header_father{
-
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    width: 100%;
-    height: 12vh;
+.listanav {
   
-       
-}
-
-.logo {
-     width: 20%;
-     height: 80px;
-     object-fit: cover;
-}
-
-
-ul{
-    list-style: none; 
-}
-
-a{
-    text-decoration: none;
-}
-
-
-.hola_li {
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    width: 70%;
-    height:50px;
-    font-family:'Alegreya Sans SC', sans-serif;
-    font-size: 13px;
-    font-weight: bold; 
+    justify-content: flex-end;
+}
+
+.nav-itemli{
+    margin-left: 5rem;
+}
+
+.colornav{
+    background-color: white !important;
+}
+
+#colorli{
+    color: black
+}
+
+#colorhover{
+    background-color: rgba(172, 216, 216)!important;
+    border-radius: 20px;
     color: black;
-   
-    
 }
 
-li:hover {
-    background-color:rgba(172, 216, 216)
-    }
+.nav-link:hover {
+    background-color:rgba(172, 216, 216);
+    border-radius: 20px;
+    } 
 
-#contacto {
-    color: rgb(0, 0, 0);
-}
+/*---------boostrap index nav --------*/
 
-.contacto-1 {
-    background-color: rgba(172, 216, 216);
-    padding: 7px;
-    
-}
 
-/*---------------------------------------------- MAIN (INDEX)------------------------------------------------------*/
+/*---------------------------------------------- (INDEX-main)------------------------------------------------------*/
 
 .main_index{
     background-image: url( images/paginabienvenidos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    width: 100vw;
-    height: 480px;
+    height: 445px;
     padding-top: 20px;
-    
-   
 }
 
 .main_indexfather{
@@ -96,9 +62,7 @@ li:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: solid 1px rgb(0, 255, 13);
-    padding-top: 5px;
-     
+    padding-top: 5px; 
 }
 
 
@@ -108,13 +72,9 @@ li:hover {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    border: solid 1px red;
-    padding-top: 10px;
-    
-    
-
-    
+    padding-top: 10px;  
 }
+
 .tituloindex_son1{
     display: flex;
     flex-direction: column;
@@ -122,41 +82,50 @@ li:hover {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     text-align: center;
-    padding: 5px;
     width: 50vw;
-    height: 100px;
-    border: solid 1px;
-    
+    height: 120px;   
+    margin-top: 30px;
+   
 }
 
 #tituloson2_estilotexto {
 
-    font-size: 17px;
+    font-size: 16px;
     font-family:Arial, Helvetica, sans-serif;
-    padding: 30px;
-    color: white;
-    border: solid 1px yellow;
+    padding: 10px;
+    margin-top:  20px;
+    color: white;  
+    width: 100%;
+    height: 40px; 
+    text-align: center;
+}
 
-    
+#tituloson2_estilotexto:hover{
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.404);
+   
 }
 
 .dejametumensaje_index{
     width: 190px;
     height: 25px;
     font-size: 15px;
-    background-color: rgba (175, 175, 175, 0);
-    border: solid 0.9px;
     color: white;
     margin: 50px;
-    padding: 3px;
+    text-decoration: none;
     display: flex;
     justify-content: center;
+    text-decoration: none;  
 }
 
-.dejametumensaje:hover{
-
-    background-color: rgb(175, 167, 167);
+#colordejametumensaje{
+        background-color:rgba(22, 25, 31, 0.63);
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        align-items: center;
 }
+
 
 @media screen and (max-width: 1146px) {
   .tituloindex_son1{
@@ -219,7 +188,7 @@ li:hover {
 
 
 
-/*-----------------------------------MAIN (SERVICIOS)-----------------------------------------------------*/
+/*-----------------------------------(SERVICIOS-main)-----------------------------------------------------*/
 
 
 
@@ -234,15 +203,11 @@ li:hover {
    }
 
    .cuatro{
-      
        background-image: url(images/servicios-cuatro.jpg);
        background-size: cover;
        background-position:top top;
        width: 100%;
-       height: 52%;
-     
-       
-       
+       height: 53%;
    }
 
 .container_card{
@@ -253,36 +218,37 @@ li:hover {
     align-items: center;
     flex-wrap: wrap;
     width: 100vw;
-    height: 258px;
-    
-    
-
+    height: 458px;
 }
 
 
 .card{
-
-width:200px;
-height: 280px;
+width: 230px;
+height: 390px;
 background-color: white;
 text-align: center;
 padding: 15px;
 border-radius: 20px;
 border-right: outset rgb(173, 195, 196);
-display: flex;
-justify-content: center;
-flex-direction: row;
-flex-wrap: wrap;
 position: relative;
-top: -45px;
+top: -85px;
 }
 
 .card img{
-
-    width: 40%;
+    width: 100%;
     height: 25%;
-    border: solid 3px; color: blueviolet;
-   
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.tam{
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.tam2{
+    font-size: 12px;
 }
 
 @media screen and  (max-width: 802px) {
@@ -309,22 +275,16 @@ top: -45px;
         background-size: cover;
         background-position:top top;
         width: none;
-        height: none;
-      
-        
-        
-    }
-    
+        height: none; 
+    }  
 }
 
 
-
-/*----------------------------------- MAIN SOBRE MI -----------------------------------------------------*/
+/*-----------------------------------(SOBRE MI) -----------------------------------------------------*/
 
 .main_sobremi{
     background-color: rgb(255, 255, 255);
-    border: solid 1px yellow;
-    
+    border: solid 1px yellow; 
 }
 
 .container_sobremi{
@@ -343,8 +303,7 @@ top: -45px;
 
 .caja_quiensoy{
     width: 100vw;
-    border:  solid 1px red;
-    
+    border:  solid 1px red; 
 }
 
 .quiensoy1{
@@ -364,26 +323,26 @@ p{
     padding: 10px;
 }
 
-.cajafotode_mi{
-
-width: 100%;
-display: flex;
-flex-direction:column;
-justify-content: flex-start;
-align-items: center;
-border: solid 2px pink;
-
-
-
+.father_cajafotodemi{
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-top: 1em;
 }
 
-.cajafotode_mi img{
-    object-fit: cover;
-    border: solid 1px;
-    
-
+.div_cajafotodemi {
+    width: 35%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
 }
 
+.div_cajafotodemi img {
+    padding: 0.5em;
+}
 /*-----------------------------------MAIN CONTACTOS--------------------------------------------------------*/
 
 .main_contacto{
@@ -545,8 +504,6 @@ justify-content: center;
 align-items: center;
 object-fit: cover;
 
-
-
 }
 
 .grid-container{
@@ -620,24 +577,24 @@ object-fit: cover;
 /*-----------------------------------aca comienza foter------------------------------------------------------*/
 
 
-
-
 .footer_father{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background-color: lightgrey;  
+    background-color: rgba(31, 70, 75, 0.863); 
     width: 100%;
-    height: 100%;
+    height: 40%;
+  
 }
 
 .redes_son {
-    margin: 2px;
+    margin: 5px;
     padding: 0px;
     display: flex;
     width: 150px;
     justify-content: space-around;
+   
 }
 
 .imagen_r{
@@ -645,14 +602,38 @@ object-fit: cover;
     height: 100%;
 }
 
-.copyright {    
+.copyright {  
+    text-align: center;
+    width: 40%;  
+    height: 60px; 
+    padding-top: 5px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
     
-    color: rgb(12, 12, 12);
     
 }
 
 #tamaniocopy{
-    font-size: 13px;
+    font-size: 12px;
    
 }
+
+
+@media screen and (max-width:562px) {
+    .copyright{
+        height: 100%;
+        font-size: 10px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:562px){
+    .dejametumensaje_index{
+        font-size: 12px;
+    }
+}
+
 /*-----------------------------------FOOTER-----------------------------------------------------*/
