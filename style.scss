@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2? familia= Nunito+Sans:peso@200 &familia= Roboto:ital,peso@0,400;1,900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+$primary-color: white;
+$secundary-color: rgb(172, 216, 216);
+
+
+
+
+/*-----------------------------------a partir de aca comienza: header (Nav)-------------------------------------------------*/
+
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box; 
+}
+
+
+/*---------boostrap nav ------------------*/
+
+.listanav {
+  
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-itemli{
+    margin-left: 5rem;
+}
+
+.colornav{
+    background-color: $primary-color!important;
+}
+
+#colorli{
+    color: black
+}
+
+#colorhover{
+    background-color: $secundary-color!important;
+    border-radius: 20px;
+    color: black;
+}
+
+.nav-link:hover {
+    background-color:$secundary-color;
+    border-radius: 20px;
+    } 
+
+/*---------boostrap index nav --------*/
+/*-----------------------------------Aca termina Header (nav) c/boostrap-------------------------------------------------*/
+
+
+
+/*-----------------------------------a partir de aca comienza : INICIO-------------------------------------------------*/
+
+.main{
+    background-image: url( images/paginabienvenidos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 445px;
+    padding-top: 20px;
+ 
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 5px; 
+}
+
+.main__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;  
+}
+
+.main__title1{
+    display: flex;
+    flex-direction: column;
+    color: $primary-color;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 50vw;
+    height: 120px;   
+    margin-top: 30px;
+   
+}
+
+.main__title2{
+
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-top:  20px;
+    color:$primary-color;  
+    width: 100%;
+    height: 40px; 
+    text-align: center;
+}
+
+.main__title2:hover{
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.404);
+   
+}
+
+.main__mensaje{
+    width: 190px;
+    height: 25px;
+    font-size: 15px;
+    color: white;
+    margin: 50px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;  
+}
+
+.main__mensaje--color{
+
+    background-color:rgba(22, 25, 31, 0.63);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+}
+
+
+@media screen and (max-width: 1146px) {
+    .main__title1{
+      width: 90vw;
+      height: 100px;
+    } 
+      
+  }
+  
+  @media screen and (max-width: 622px){
+      .main__title1{
+          font-size: 12px ;
+      }
+  
+      .main__title2 {
+          text-align: center;
+          font-size: 10px;
+      }
+  }
+  
+  
+  @media screen and (max-width:569px) {
+      .footer__redes{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+  
+  
+      .footer__copyright{
+          text-align: center;
+      }
+  }
+  
+  @media screen and ( max-width:382px) {
+      .main__title1{
+          width: 90vw;
+          height: 150px;
+        } 
+          
+  }
+  
+
+/*-----------------------------------Aca termina INICIO -------------------------------------------------*/
+
+
+
+
+
+
+/*-----------------------------------Aca comienza seccion:SERVICIOS (main)-----------------------------------------------------*/
+
+.main_servicios{
+    background-color: rgb(208, 253, 255);
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    align-content: center;
+   }
+  
+   .cuatro{
+       background-image: url(images/servicios-cuatro.jpg);
+       background-size: cover;
+       background-position:top top;
+       width: 100%;
+       height: 53%;
+   }
+  
+  .container_card{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 458px;
+  }
+  
+  
+  .card{
+  width: 230px;
+  height: 390px;
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 20px;
+  border-right: outset rgb(173, 195, 196);
+  position: relative;
+  top: -85px;
+  }
+  
+  .card img{
+    width: 100%;
+    height: 25%;
+    margin-bottom: 15px;
+    object-fit: contain;
+  }
+  
+  .tam{
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  
+  .tam2{
+    font-size: 12px;
+  }
+  
+  @media screen and  (max-width: 802px) {
+    .container_card {
+        width: 100%;
+        height: 100%;
+    }
+  
+    .main_servicios{
+        width: 100%;
+        height: 80%;
+       }
+    
+    .card {
+           top: 0px;
+           margin-top: 8px;
+           margin-bottom: 8px;
+           position: static;
+       }
+  
+       .cuatro{
+      
+        background-image: none;
+        background-size: cover;
+        background-position:top top;
+        width: none;
+        height: none; 
+    }  
+  }
+  
+  /*-----------------------------------Aca termina seccion: SERVICIOS -----------------------------------------------/*
+  
+  /*-----------------------------------Aca comienza seccion: NOSOTROS (main) ----------------------------------------*/
+  
+  .main_nosotros{
+    background-color: rgb(255, 255, 255);
+    
+  }
+  
+  .container_nosotros{
+  
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  
+  }
+  
+  
+  .caja_quienessomos{
+    width: 100vw;
+  }
+  
+  .quienessomos{
+  
+  width:100%;
+  background-color: rgb(172, 216, 216);
+  text-align: center;
+  padding: 25px;
+  
+  }
+  
+  h1{
+    padding: 10px;
+  }
+  p{
+    padding: 10px;
+  }
+  
+  .father_fotonosotros{
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-top: 1em;
+  }
+  
+  .div_fotonosotros {
+    width: 35%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .div_fotonosotros img {
+    padding: 0.5em;
+  }
+  
+  /*-----------------------------------Aca termina seccion: NOSOTROS -----------------------------------------------/*
+  
+  
+  
+  /*-----------------------------------Aca comienza seccion: CLIENTES (main) ---------------------------------------*/
+  
+  .cliente{
+     
+    grid-area: 1/ 1 / 1 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    background-color: #acd8d8;
+  
+   }
+  
+   p{
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    align-items: center;
+    display:contents;
+   }
+   
+   .bayer{
+      
+       grid-area: 2 / 1 / 2 / 1;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       object-fit: cover;
+     
+   }
+   
+   .telecom{
+   
+   grid-area: 2 / 2 / 2 / 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   object-fit: cover;
+   
+   }
+   
+   .confiarh{
+    
+    grid-area: 2 / 3 / 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+   }
+   
+   .starbucks{
+   
+   grid-area: 3 / 1 / 3 / 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   object-fit: cover;
+   
+   }
+   
+   .adecco{
+   
+   grid-area: 3 / 2 / 3 / 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   object-fit: cover;
+   
+   }
+   
+   .pwc{
+  
+   grid-area: 3 / 3 / 3 / 3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   object-fit: cover;
+   }
+   
+   .grid-container{
+       display: grid;
+       grid-column: 1fr 1fr 1fr;
+       grid-row: 80px 1fr 1fr;
+       }
+       
+   
+   @media screen and (max-width: 971px) {
+    .grid-container{
+        grid-column: 50% 50%;
+        grid-row: 80px 1fr 1fr 1fr;    
+
+   
+    }
+   
+    .cliente{
+       grid-area: 1/ 1 /1 / 3;
+    }
+   
+    .bayer{
+     grid-area: 2 / 1/ 2/ 2 
+    }
+   
+    .telecom{
+       grid-area: 2 / 2 / 2 /3;
+    } 
+   
+    .confiarh{
+        grid-area: 3 / 1 / 3/ 2;
+    }
+   
+   
+    .starbucks{
+        grid-area: 3/ 2 / 3 / 3;
+    }
+   
+    .adecco{
+        grid-area: 4 / 1 / 4 / 2;
+    }
+   
+    .pwc{
+        grid-area: 4 / 2 / 4 / 3;
+    }
+   
+    .grid-container img{
+       width: 100%;
+       height: 100%;
+    }
+   
+   }
+  
+  /*-----------------------------------Aca comienza seccion: CONTACTOS --------------------------------------------------------*/
+  
+  .main_contacto{
+  
+    background-image: url("images/img_contacto.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;  
+  
+  }
+  
+  .contenedor_contacto{
+  
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+  }
+  
+  .titulo-contacto{
+    
+    width: 80%;
+    height: 10%;
+    font-size: 20px;
+  }
+  .subtitulo-contacto{
+  
+    width: 70%;
+    height: 10%;
+    font-size: 10px;
+    margin-left: 10%;
+  }
+  
+  .contactame{
+    width: 40%;
+    height: 10%;
+    font-size: 10px;
+    margin-left: 5%;
+    margin-top: 5%;
+  
+  }
+  
+  .formulariocontacto{
+    width: 90%;
+    height: 65%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  
+  }
+  
+  @media screen and (max-width: 515px) {
+  
+    #recuadroenviar {
+        width: 300px;
+        height: 20%;
+    }
+  
+    .titulo-contacto{
+  
+        font-size: 15px;
+        margin-left: 10%;
+        margin-top: 10px;
+    }
+    .subtitulo-contacto{
+    
+        width: 80%;
+        font-size: 8px;
+        width: 100%;
+        text-align: left;
+        margin-left: 6%;
+    }
+  }
+  
+  @media screen and (max-width: 324px) {
+    #recuadroenviar {
+        width: 169px;
+        height: 20%;
+    }
+  }
+  
+  
+  /*-----------------------------------Aca termina seccion CONTACTOS --------------------------------------------------------*/
+  
+  /*-----------------------------------a partir de aca comineza: Footer-------------------------------------------------*/
+
+
+.footer__footer1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:rgba(31, 70, 75, 0.863); 
+    width: 100%;
+    height: 30%;
+    
+
+
+.footer__redes {
+    margin: 5px;
+    padding: 0px;
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+   
+   
+}
+
+.footer__imagenredes{
+    width: 40px;
+    height: 100%;
+}
+
+.footer__copyright {  
+    text-align: center;
+    width: 40%;  
+    height: 60px; 
+    padding-top: 5px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    
+     
+}
+
+.footer__tamaniocopy{
+    font-size: 12px;
+}
+
+}
+
+
+@media screen and (max-width:562px) {
+    .footer__copyright{
+        height: 100%;
+        font-size: 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width:562px){
+    .main__mensaje{
+        font-size: 12px;
+    }
+}
+
+
+/*-----------------------------------Aca termina footer-------------------------------------------------*/
