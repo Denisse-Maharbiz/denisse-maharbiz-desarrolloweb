@@ -1,0 +1,42 @@
+$primary-color: white;
+$secundary-color: rgb(172, 216, 216);
+
+
+
+.listanav {
+  
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .nav-itemli{
+        margin-left: 5rem;
+    }
+
+    
+
+.colornav{
+    background-color: $primary-color!important;
+}
+
+#colorli{
+    color: black
+}
+
+#colorhover{
+    background-color: $secundary-color!important;
+    border-radius: map-get($display, border-radius2 );
+    color:map-get($display, color1 );
+}
+
+.nav-link:hover {
+    background-color:$secundary-color;
+    border-radius: map-get($display, border-radius2);
+    } 
+
+}
+
+
+
+/*---------trabaje con boostrap index (nav/header) --------*/
+

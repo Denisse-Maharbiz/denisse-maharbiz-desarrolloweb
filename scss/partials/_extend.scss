@@ -1,0 +1,17 @@
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+    
+@mixin grid-cliente1($display, $column, $justificacion, $alineado, $cover) {
+    display: $display;
+    flex-direction: $column;
+    justify-content: $justificacion;
+    align-items: $alineado;
+    object-fit: $cover;
+} 
+
+

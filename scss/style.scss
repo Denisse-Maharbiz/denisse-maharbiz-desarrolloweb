@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2? familia= Nunito+Sans:peso@200 &familia= Roboto:ital,peso@0,400;1,900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+@import "./partials/extend";
+@import "./partials/mapas";
+@import"./partials/_variables";
+@import "./partials/_header";
+@import "./partials/_main-index";
+@import"./partials/_main-servicios";
+@import"./partials/_main-nosotros";
+@import"./partials/_main-clientes";
+@import"./partials/_main-contactos";
+@import"./partials/_main-footer";
+@import "./partials/_mediaQuerys";
+
+
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box; 
+}
+

@@ -1,0 +1,187 @@
+/*------- SECCION- INDEX*/ 
+
+@media screen and (max-width: 1146px) {
+    .main__title1{
+      width: 90vw;
+      height: 100px;
+    } 
+      
+  }
+  
+  @media screen and (max-width: 622px){
+      .main__title1{
+          font-size: 12px ;
+      }
+  
+      .main__title2 {
+          text-align: center;
+          font-size: 10px;
+      }
+  }
+  
+  
+  @media screen and (max-width:569px) {
+      .footer__redes{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+  
+  
+      .footer__copyright{
+          text-align: center;
+      }
+  }
+  
+  @media screen and ( max-width:382px) {
+      .main__title1{
+          width: 90vw;
+          height: 150px;
+         
+        h1{
+            font-size: 25px;
+        }
+        } 
+
+          
+  }
+  
+
+/*---------SECCION-SERVICIO-------*/
+
+@media screen and  (max-width: 802px) {
+    .container_card {
+        width: 100%;
+        height: 100%;
+    }
+  
+    .main_servicios{
+        width: 100%;
+        height: 80%;
+       }
+    
+    .card {
+         
+           top: 0px;
+           margin-top: 8px;
+           margin-bottom: 8px;
+           position: static;
+       }
+  
+       .cuatro{
+      
+        background-image: none;
+        background-size: cover;
+        background-position:top top;
+        width: none;
+        height: none; 
+    }  
+  }
+  
+/*---------SECCION-NOSOTROS S/MediaQuerys-------*/
+
+
+/*---------SECCION-CLIENTES-------*/
+
+@media screen and (max-width: 971px) {
+    .grid-container{
+        grid-column: 50% 50%;
+        grid-row: 1fr 1fr 1fr 1fr;    
+
+   
+    }
+   
+    .cliente{
+       grid-area: 1/ 1 /1 / 3;
+    }
+   
+    .bayer{
+     grid-area: 2 / 1/ 2/ 2 
+    }
+   
+    .telecom{
+       grid-area: 2 / 2 / 2 /3;
+    } 
+   
+    .confiarh{
+        grid-area: 3 / 1 / 3/ 2;
+    }
+   
+   
+    .starbucks{
+        grid-area: 3/ 2 / 3 / 3;
+    }
+   
+    .adecco{
+        grid-area: 4 / 1 / 4 / 2;
+    }
+   
+    .pwc{
+        grid-area: 4 / 2 / 4 / 3;
+    }
+   
+    .grid-container img{
+       width: 100%;
+       height: 100%;
+    }
+   
+   }
+  
+   /*---------SECCION-CONTACTO-------*/
+  
+  
+  
+  @media screen and (max-width: 324px) {
+
+    #recuadroenviar {
+        width: 169px;
+        height: 20%;
+    }
+  }
+
+  
+  @media screen and (max-width: 522px) {
+
+    .main_contacto{
+        width: 100%;
+    }
+  
+    #recuadroenviar {
+        width: 300px;
+        height: 20%;
+    }
+  
+    .titulo-contacto{
+  
+        font-size: 11px;
+        margin-left: 10%;
+        margin-top: 10px;
+    }
+    .subtitulo-contacto{
+    
+        width: 80%;
+        font-size: 8px;
+        width: 100%;
+        text-align: left;
+        margin-left: 6%;
+    }
+  }
+
+  
+/*---------SECCION-FOOTER-------*/
+
+  
+@media screen and (max-width:562px) {
+    .footer__copyright{
+        height: 100%;
+        font-size: 10px;
+    }
+    .main__mensaje{
+        font-size: 12px;
+    }
+
+
+}
+
+
