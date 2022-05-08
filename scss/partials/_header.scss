@@ -13,7 +13,6 @@ $secundary-color: rgb(172, 216, 216);
         margin-left: 5rem;
     }
 
-    
 
 .colornav{
     background-color: $primary-color!important;
@@ -25,7 +24,7 @@ $secundary-color: rgb(172, 216, 216);
 
 #colorhover{
     background-color: $secundary-color!important;
-    border-radius: map-get($display, border-radius2 );
+    border-radius: map-get($display, border-radius);
     color:map-get($display, color1 );
 }
 

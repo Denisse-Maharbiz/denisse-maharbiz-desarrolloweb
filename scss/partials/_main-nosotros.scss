@@ -24,23 +24,31 @@
   background-color: $secundary-color;
   text-align: center;
   padding: 25px;
+}
 
   
-  h1{
+  .titulonosotros{
     padding: 10px; 
+    font-family: 'Comfortaa';
   }
 
-  h3 {
-      padding: 10px;
-        }
-
-  p{
-      padding: 20px;
+  .nosotros2{
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
     }
 
-  }
-   
-  
+
+
+  .parrafo2{
+      font-family: 'Montserrat', sans-serif;
+      line-height: 25px;
+    }
+
+ .objetivo{
+   -webkit-text-stroke: 0.4px;
+ }
+ 
     
     .father_fotonosotros{
       width: 90vw;
